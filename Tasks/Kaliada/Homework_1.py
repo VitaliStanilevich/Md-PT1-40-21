@@ -11,6 +11,6 @@ cash = 20000
 dep_time = 5
 percent = 15
 
-new_cash = cash * (1 + percent/100/13) ** (dep_time * 12)
+new_cash = cash * (1 + percent/100/12) ** (dep_time * 12)
 
 print("Сумма на счету через 5 лет: ", round(new_cash, 2), " BYN")
