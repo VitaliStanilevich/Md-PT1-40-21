@@ -3,4 +3,4 @@ r = 15
 t = 5
 n = 12 
 A = x*(1+r/100/n)**(n*t)
-print(A)
+print(round(A, 2))
