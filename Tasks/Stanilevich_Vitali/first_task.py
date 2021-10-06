@@ -5,7 +5,7 @@
 
 # x = p * (1 + r / n)**(n*t)
 
-# print (x, 'BYN')
+# print (round(x, 2),'BYN')
 
 
 p = int(input ("Сумма депозита "))
