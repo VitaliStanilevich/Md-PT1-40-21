@@ -1,9 +1,9 @@
 #a * x ** 3 + b * x ** 2 + c * x + d = 0
 import math
-a = int(input("Введите a:"))
-b = int(input("Введите b:"))
-c = int(input("Введите c:"))
-d = int(input("Введите d:"))
+a = float(input("Введите a:"))
+b = float(input("Введите b:"))
+c = float(input("Введите c:"))
+d = float(input("Введите d:"))
 
 def x(y):
     x = y - b / (3 * a)
