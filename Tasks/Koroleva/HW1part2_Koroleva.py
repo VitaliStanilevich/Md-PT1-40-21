@@ -4,10 +4,7 @@ import math
 import numpy
 # ввод исходных данных и точности
 print("Введите коэффициенты кубического уравнения: a*x^3+b*x^2+c*x+d=0")
-a = float(input("a = "))
-b = float(input("b = "))
-c = float(input("c = "))
-d = float(input("d = "))
+a,b,c,d = float(input("a=")), float(input("b=")), float(input("c=")), float(input("d="))
 accuracy = int(input("Введите точность вычисления (количество знаков после запятой): "))
 # решение квадратного уравнения в случае a = 0
 if a == 0:
