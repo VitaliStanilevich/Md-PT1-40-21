@@ -86,7 +86,8 @@ time(h, m)
 
 hm = input('Enter your time(hh:mm)\n').split(':')
 h, m = int(hm[0]), int(hm[1])
-if 0 <= h <= 24 and 0 <= m < 60:
+h = simple_hour(h)
+if 0 <= h <= 12 and 0 <= m < 60:
     time(h, m)
 else:
     print('Вы ввели неверный формат')
