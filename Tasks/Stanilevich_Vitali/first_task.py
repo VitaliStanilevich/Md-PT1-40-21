@@ -5,8 +5,7 @@
 
 # x = p * (1 + r / n)**(n*t)
 
-# print (x, 'BYN')
-
+# print (round(x, 2),'BYN')
 
 
 p = int(input ("Сумма депозита "))
@@ -19,7 +18,7 @@ if N == "да":
     r = r / 100
     f = n * t
     x =(1 + r / n)**f * p
-    print (x,'BYN')
+    print (round(x, 2),'BYN')
 else:
     N == "Нет"
     n = 12
@@ -27,5 +26,5 @@ else:
     f = n * t
     x = (p * r *  f) / n
     x = x + p
-    print (x,'BYN')
+    print (round(x, 2),'BYN')
 
