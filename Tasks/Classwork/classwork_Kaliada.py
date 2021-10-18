@@ -39,8 +39,5 @@ for i in range(len(l) - 1):
     else:
         l_new.append(l[i] + l[i + 1])
 print(l_new)
-su = 0
-for i in l:
-    if i % 2 != 0:
-        su += i
-print(su)
+
+print(sum([el for el in l if el % 2 != 0]))
