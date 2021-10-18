@@ -1,4 +1,4 @@
-s = "five thirteen two eleven seventeen two one thirteen ten four eight five nineteen"
+# "five thirteen two eleven seventeen two one thirteen ten four eight five nineteen"
 d = {
     "one": 1,
     "two": 2,
@@ -22,23 +22,8 @@ d = {
     "twenty": 20
     }
 
-l = [d[el] for el in s.split()]
-print(l)
-
-print(list(set(l)))
-
-for i in range(len(l)):
-    for j in range(len(l) - 1):
-        if l[j] > l[j + 1]:
-            l[j], l[j + 1] = l[j + 1], l[j]
-print(l)
-
-l_new = []
-for i in range(len(l) - 1):
-    if i % 2 == 0:
-        l_new.append(l[i] * l[i + 1])
-    else:
-        l_new.append(l[i] + l[i + 1])
-print(l_new)
-
-print(sum([el for el in l if el % 2 != 0]))
+print([d[el] for el in "five thirteen two eleven seventeen two one thirteen ten four eight five nineteen".split()])
+print(list(set([d[el] for el in "five thirteen two eleven seventeen two one thirteen ten four eight five nineteen".split()])))
+print(sorted([d[el] for el in "five thirteen two eleven seventeen two one thirteen ten four eight five nineteen".split()]))
+print([sorted([d[el] for el in "five thirteen two eleven seventeen two one thirteen ten four eight five nineteen".split()])[el] * sorted([d[el] for el in "five thirteen two eleven seventeen two one thirteen ten four eight five nineteen".split()])[el + 1] if el % 2 == 0 else sorted([d[el] for el in "five thirteen two eleven seventeen two one thirteen ten four eight five nineteen".split()])[el] + sorted([d[el] for el in "five thirteen two eleven seventeen two one thirteen ten four eight five nineteen".split()])[el + 1] for el in range(len(sorted([d[el] for el in "five thirteen two eleven seventeen two one thirteen ten four eight five nineteen".split()])) - 1)])
+print(sum([el for el in sorted([d[el] for el in "five thirteen two eleven seventeen two one thirteen ten four eight five nineteen".split()]) if el % 2 != 0]))
