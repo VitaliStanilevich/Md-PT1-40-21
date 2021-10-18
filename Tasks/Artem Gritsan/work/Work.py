@@ -17,15 +17,13 @@ for i in range(len(l)):
     l[i] = k[l[i]]
 l = sorted(set(l))
 l = list(l)
+p = 0
 for x in range(len(l)):
     if x % 2 == 0:
         l[x] = l[x] * l[x+1]
     else:
         if x != len(l) - 1:
             l[x] = l[x] + l[x+1]
-print(l)
-p = 0
-for y in l:
-    if y % 2 != 0:
-        p += y
-print(p)
+    if l[x] % 2 != 0:
+        p += l[x]
+print(l, p)
