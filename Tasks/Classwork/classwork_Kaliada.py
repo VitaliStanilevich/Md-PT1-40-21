@@ -24,6 +24,7 @@ d = {
 
 l = [d[el] for el in s.split()]
 print(l)
+
 print(list(set(l)))
 
 for i in range(len(l)):
