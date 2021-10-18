@@ -33,6 +33,6 @@ elif m in range (2, 4+1) or m in range (21, 24+1) or m in range (32, 34+1) or m 
 elif m in range (5, 20+1) or m in range (25, 29+1) or m in range (35, 40+1):
     print(first_minutes[m], "минут", half_hour[h])
 elif m == 59:
-    print("Без", second_minutes[m], "минуты", half_hour[h])
+    print("Без", second_minutes[m], "минуты", half_past_hour[h])
 elif m >= 45:
-    print("Без", second_minutes[m], "минут", half_hour[h])
+    print("Без", second_minutes[m], "минут", half_past_hour[h])
