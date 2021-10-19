@@ -1,5 +1,4 @@
 import datetime
-
 def two_digit_min (a):
     if a > 20 and a%10 != 0:
         min_10 = (a//10)*10
