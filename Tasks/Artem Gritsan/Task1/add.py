@@ -1,4 +1,4 @@
-from re import search
+
 x, y = input('Введите первую строку:\n'), input('Введите вторую строку:\n')
 if len(x) == len(y):
     if x[0] == y[0]:
